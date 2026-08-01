@@ -1,0 +1,28 @@
+# Core
+python-dotenv   # loads .env into environment variables
+pytest          # test runner
+
+# Ingestion (Phase 1): document loaders
+beautifulsoup4  # HTML parsing
+pypdf           # PDF text extraction
+
+# Ingestion (Phase 1): semantic chunking + (later) retrieval embeddings
+sentence-transformers  # local embedding models (free, no API key), pulls in torch
+
+# Ingestion (Phase 1) / Retrieval (Phase 2): hybrid index
+chromadb   # local embedded vector store (dense index)
+rank_bm25  # keyword search (sparse index)
+
+# Generation (Phase 3): grounded answers via the free Groq API
+groq
+
+# API (Phase 5): FastAPI service
+fastapi
+uvicorn[standard]  # ASGI server to actually run the app
+python-multipart   # required by FastAPI for file-upload (UploadFile) endpoints
+httpx              # test client for the API, and the dashboard's HTTP client to reach it
+
+# Dashboard (Phase 5): Streamlit UI
+streamlit
+
+# More will be added incrementally as each pipeline stage needs them

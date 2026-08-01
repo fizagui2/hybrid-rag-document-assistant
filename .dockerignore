@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.git/
+.env
+data/raw/*
+data/processed/*
+data/chroma/
+data/bm25_index.pkl
+eval/results/

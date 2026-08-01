@@ -1,0 +1,26 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - app_data:/app/data
+    env_file:
+      - .env
+    command: python -m uvicorn src.api.app:app --host 0.0.0.0 --port 8000
+
+  dashboard:
+    build: .
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+    environment:
+      - API_BASE_URL=http://api:8000
+    command: python -m streamlit run dashboard/app.py --server.address 0.0.0.0 --server.port 8501
+
+volumes:
+  # Named volume, not a bind mount — persists the index across
+  # `docker compose down`/`up` cycles without touching the host's real
+  # data/ directory (kept separate from local, non-containerized runs).
+  app_data:

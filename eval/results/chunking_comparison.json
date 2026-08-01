@@ -1,0 +1,119 @@
+{
+  "fixed": {
+    "overall": {
+      "count": 11,
+      "correctness": 0.8863636363636364,
+      "faithfulness": 0.9,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 0.5729166666666666
+    },
+    "by_category": {
+      "ambiguous": {
+        "count": 2,
+        "correctness": 0.45,
+        "faithfulness": 1.0,
+        "retrieval_relevance": null,
+        "citation_accuracy": 0.6666666666666666
+      },
+      "multi_hop": {
+        "count": 4,
+        "correctness": 0.9625,
+        "faithfulness": 0.8,
+        "retrieval_relevance": 1.0,
+        "citation_accuracy": 0.22916666666666666
+      },
+      "no_answer": {
+        "count": 2,
+        "correctness": 1.0,
+        "faithfulness": null,
+        "retrieval_relevance": 1.0,
+        "citation_accuracy": null
+      },
+      "straightforward": {
+        "count": 3,
+        "correctness": 1.0,
+        "faithfulness": 1.0,
+        "retrieval_relevance": 1.0,
+        "citation_accuracy": 1.0
+      }
+    }
+  },
+  "structure": {
+    "overall": {
+      "count": 11,
+      "correctness": 0.8090909090909091,
+      "faithfulness": 0.9,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 0.5714285714285714
+    },
+    "by_category": {
+      "ambiguous": {
+        "count": 2,
+        "correctness": 0.5,
+        "faithfulness": 1.0,
+        "retrieval_relevance": null,
+        "citation_accuracy": 0.0
+      },
+      "multi_hop": {
+        "count": 4,
+        "correctness": 0.725,
+        "faithfulness": 0.7666666666666666,
+        "retrieval_relevance": 1.0,
+        "citation_accuracy": 0.3333333333333333
+      },
+      "no_answer": {
+        "count": 2,
+        "correctness": 1.0,
+        "faithfulness": null,
+        "retrieval_relevance": 1.0,
+        "citation_accuracy": null
+      },
+      "straightforward": {
+        "count": 3,
+        "correctness": 1.0,
+        "faithfulness": 1.0,
+        "retrieval_relevance": 1.0,
+        "citation_accuracy": 1.0
+      }
+    }
+  },
+  "semantic": {
+    "overall": {
+      "count": 11,
+      "correctness": 0.8090909090909091,
+      "faithfulness": 0.8892857142857142,
+      "retrieval_relevance": 1.0,
+      "citation_accuracy": 0.5714285714285714
+    },
+    "by_category": {
+      "ambiguous": {
+        "count": 2,
+        "correctness": 0.45,
+        "faithfulness": 1.0,
+        "retrieval_relevance": null,
+        "citation_accuracy": 0.0
+      },
+      "multi_hop": {
+        "count": 4,
+        "correctness": 0.75,
+        "faithfulness": 0.7416666666666667,
+        "retrieval_relevance": 1.0,
+        "citation_accuracy": 0.3333333333333333
+      },
+      "no_answer": {
+        "count": 2,
+        "correctness": 1.0,
+        "faithfulness": null,
+        "retrieval_relevance": 1.0,
+        "citation_accuracy": null
+      },
+      "straightforward": {
+        "count": 3,
+        "correctness": 1.0,
+        "faithfulness": 1.0,
+        "retrieval_relevance": 1.0,
+        "citation_accuracy": 1.0
+      }
+    }
+  }
+}

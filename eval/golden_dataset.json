@@ -1,0 +1,410 @@
+[
+  {
+    "id": "sf-01",
+    "question": "How many days per week can employees work remotely?",
+    "expected_answer": "Up to 3 days per week.",
+    "category": "straightforward",
+    "source_documents": ["hr_policies.md"],
+    "notes": "Remote Work Policy section."
+  },
+  {
+    "id": "sf-02",
+    "question": "How far in advance must a remote work request be submitted?",
+    "expected_answer": "At least 48 hours in advance.",
+    "category": "straightforward",
+    "source_documents": ["hr_policies.md"],
+    "notes": "Remote Work Policy section."
+  },
+  {
+    "id": "sf-03",
+    "question": "How many vacation days do full-time employees accrue per year?",
+    "expected_answer": "15 vacation days per year.",
+    "category": "straightforward",
+    "source_documents": ["hr_policies.md"],
+    "notes": "Vacation Policy section."
+  },
+  {
+    "id": "sf-04",
+    "question": "What is the maximum number of vacation days that can roll over to the next year?",
+    "expected_answer": "Up to a maximum of 30 days.",
+    "category": "straightforward",
+    "source_documents": ["hr_policies.md"],
+    "notes": "Vacation Policy section."
+  },
+  {
+    "id": "sf-05",
+    "question": "How many weeks of paid parental leave are full-time employees eligible for?",
+    "expected_answer": "12 weeks.",
+    "category": "straightforward",
+    "source_documents": ["hr_policies.md"],
+    "notes": "Parental Leave section."
+  },
+  {
+    "id": "sf-06",
+    "question": "How many engineers must approve a code change before it can be merged?",
+    "expected_answer": "At least one other engineer.",
+    "category": "straightforward",
+    "source_documents": ["engineering_practices.md"],
+    "notes": "Code Review Process section."
+  },
+  {
+    "id": "sf-07",
+    "question": "What time of day do production deployments occur?",
+    "expected_answer": "2 PM on weekdays.",
+    "category": "straightforward",
+    "source_documents": ["engineering_practices.md"],
+    "notes": "Deployment Process section."
+  },
+  {
+    "id": "sf-08",
+    "question": "How long does an on-call rotation last?",
+    "expected_answer": "One week.",
+    "category": "straightforward",
+    "source_documents": ["engineering_practices.md"],
+    "notes": "On-Call Rotation section."
+  },
+  {
+    "id": "sf-09",
+    "question": "What is the minimum unit test coverage required for new features?",
+    "expected_answer": "At least 80%.",
+    "category": "straightforward",
+    "source_documents": ["engineering_practices.md"],
+    "notes": "Testing Standards section."
+  },
+  {
+    "id": "sf-10",
+    "question": "Within how many business days is a post-incident review required?",
+    "expected_answer": "3 business days.",
+    "category": "straightforward",
+    "source_documents": ["engineering_practices.md"],
+    "notes": "Incident Response section."
+  },
+  {
+    "id": "sf-11",
+    "question": "What is the minimum required password length?",
+    "expected_answer": "At least 12 characters.",
+    "category": "straightforward",
+    "source_documents": ["it_security_policy.md"],
+    "notes": "Password Requirements section."
+  },
+  {
+    "id": "sf-12",
+    "question": "How often must passwords be changed?",
+    "expected_answer": "Every 90 days.",
+    "category": "straightforward",
+    "source_documents": ["it_security_policy.md"],
+    "notes": "Password Requirements section."
+  },
+  {
+    "id": "sf-13",
+    "question": "What must employees use to connect to internal systems remotely?",
+    "expected_answer": "The company-issued VPN client.",
+    "category": "straightforward",
+    "source_documents": ["it_security_policy.md"],
+    "notes": "Remote Access Security section."
+  },
+  {
+    "id": "sf-14",
+    "question": "What must be enabled on company laptops before use?",
+    "expected_answer": "Full-disk encryption.",
+    "category": "straightforward",
+    "source_documents": ["it_security_policy.md"],
+    "notes": "Device Encryption section."
+  },
+  {
+    "id": "sf-15",
+    "question": "Which accounts require two-factor authentication?",
+    "expected_answer": "Accounts with access to production systems or customer data.",
+    "category": "straightforward",
+    "source_documents": ["it_security_policy.md"],
+    "notes": "Two-Factor Authentication section."
+  },
+  {
+    "id": "sf-16",
+    "question": "How much does the Starter tier cost per month?",
+    "expected_answer": "$9 per month.",
+    "category": "straightforward",
+    "source_documents": ["product_faq.md"],
+    "notes": "Pricing Tiers section."
+  },
+  {
+    "id": "sf-17",
+    "question": "How many team members does the Professional tier support?",
+    "expected_answer": "Up to 20.",
+    "category": "straightforward",
+    "source_documents": ["product_faq.md"],
+    "notes": "Pricing Tiers section."
+  },
+  {
+    "id": "sf-18",
+    "question": "What are the customer support hours?",
+    "expected_answer": "Monday through Friday, 9 AM to 6 PM Eastern Time.",
+    "category": "straightforward",
+    "source_documents": ["product_faq.md"],
+    "notes": "Support Hours section."
+  },
+  {
+    "id": "sf-19",
+    "question": "Within how many days of purchase can a customer request a full refund?",
+    "expected_answer": "Within 14 days.",
+    "category": "straightforward",
+    "source_documents": ["product_faq.md"],
+    "notes": "Refund Policy section."
+  },
+  {
+    "id": "sf-20",
+    "question": "In what formats can customers export their data?",
+    "expected_answer": "CSV or JSON.",
+    "category": "straightforward",
+    "source_documents": ["product_faq.md"],
+    "notes": "Data Export section."
+  },
+  {
+    "id": "mh-01",
+    "question": "What security measures does an employee need in place to work remotely, according to both HR and IT policy?",
+    "expected_answer": "They need a stable internet connection and the company-issued VPN client (Remote Work Policy), and per IT Security Policy, that VPN connection must have split-tunneling disabled.",
+    "category": "multi_hop",
+    "source_documents": ["hr_policies.md", "it_security_policy.md"],
+    "notes": "Combines Remote Work Policy with Remote Access Security."
+  },
+  {
+    "id": "mh-02",
+    "question": "If I want to work from home 3 days a week, what do I need to request and how must I connect to internal systems?",
+    "expected_answer": "Submit the request to a direct manager at least 48 hours in advance, and connect to internal systems using the company-issued VPN client.",
+    "category": "multi_hop",
+    "source_documents": ["hr_policies.md", "it_security_policy.md"],
+    "notes": "Combines Remote Work Policy with Remote Access Security."
+  },
+  {
+    "id": "mh-03",
+    "question": "What happens if a production incident occurs during an on-call engineer's shift, and how quickly must they respond?",
+    "expected_answer": "They must respond within 15 minutes of the alert, open an incident channel, notify the engineering lead, and a post-incident review is required within 3 business days of resolution.",
+    "category": "multi_hop",
+    "source_documents": ["engineering_practices.md"],
+    "notes": "Combines On-Call Rotation and Incident Response sections within the same document."
+  },
+  {
+    "id": "mh-04",
+    "question": "What testing and review requirements must be met before code reaches production?",
+    "expected_answer": "The code must be approved by at least one other engineer (Code Review Process), have at least 80% unit test coverage (Testing Standards), and pass the automated test suite before deployment (Deployment Process).",
+    "category": "multi_hop",
+    "source_documents": ["engineering_practices.md"],
+    "notes": "Combines Code Review Process, Testing Standards, and Deployment Process."
+  },
+  {
+    "id": "mh-05",
+    "question": "What are all the steps an employee must take regarding their laptop and network connection to work securely from outside the office?",
+    "expected_answer": "Enable full-disk encryption on the laptop (Device Encryption), connect via the company-issued VPN client with split-tunneling disabled (Remote Access Security), and use two-factor authentication for any account with access to production systems or customer data.",
+    "category": "multi_hop",
+    "source_documents": ["it_security_policy.md"],
+    "notes": "Combines Device Encryption, Remote Access Security, and Two-Factor Authentication."
+  },
+  {
+    "id": "mh-06",
+    "question": "How does the advance notice required for vacation compare to that required for parental leave?",
+    "expected_answer": "Vacation requests must be submitted at least 2 weeks in advance, while parental leave must be requested at least 30 days in advance when possible.",
+    "category": "multi_hop",
+    "source_documents": ["hr_policies.md"],
+    "notes": "Combines Vacation Policy and Parental Leave sections."
+  },
+  {
+    "id": "mh-07",
+    "question": "What is required both for merging code and for deploying it to production?",
+    "expected_answer": "Merging requires approval from at least one other engineer; deploying to production additionally requires passing the automated test suite.",
+    "category": "multi_hop",
+    "source_documents": ["engineering_practices.md"],
+    "notes": "Combines Code Review Process and Deployment Process."
+  },
+  {
+    "id": "mh-08",
+    "question": "Which pricing tier would a 10-person team need, and what support hours would they have access to?",
+    "expected_answer": "The Professional tier, which supports up to 20 members, and they would have standard support hours (Monday through Friday, 9 AM to 6 PM Eastern) since only Enterprise customers get 24/7 support.",
+    "category": "multi_hop",
+    "source_documents": ["product_faq.md"],
+    "notes": "Combines Pricing Tiers and Support Hours."
+  },
+  {
+    "id": "mh-09",
+    "question": "How does Enterprise customer support differ from standard support hours?",
+    "expected_answer": "Standard support is available Monday through Friday, 9 AM to 6 PM Eastern Time, while Enterprise customers have access to 24/7 support through a dedicated Slack channel.",
+    "category": "multi_hop",
+    "source_documents": ["product_faq.md"],
+    "notes": "Combines Pricing Tiers (Enterprise) and Support Hours."
+  },
+  {
+    "id": "mh-10",
+    "question": "If an employee cancels their product account, will they get a refund, and how does that compare to the standalone refund policy?",
+    "expected_answer": "Canceling an account does not issue a refund for the current billing period, whereas the standalone Refund Policy only allows a full refund within 14 days of the initial purchase.",
+    "category": "multi_hop",
+    "source_documents": ["product_faq.md"],
+    "notes": "Combines Account Cancellation and Refund Policy."
+  },
+  {
+    "id": "mh-11",
+    "question": "What data protections are required both for company devices and for how confidential data is shared?",
+    "expected_answer": "Company-issued laptops must have full-disk encryption enabled, and confidential data may not be stored on personal devices or shared via personal email accounts.",
+    "category": "multi_hop",
+    "source_documents": ["it_security_policy.md"],
+    "notes": "Combines Device Encryption and Data Classification."
+  },
+  {
+    "id": "mh-12",
+    "question": "What are the password and two-factor authentication requirements for an account with access to customer data?",
+    "expected_answer": "The password must be at least 12 characters with a number and a symbol, changed every 90 days, and the account must also use two-factor authentication.",
+    "category": "multi_hop",
+    "source_documents": ["it_security_policy.md"],
+    "notes": "Combines Password Requirements and Two-Factor Authentication."
+  },
+  {
+    "id": "mh-13",
+    "question": "How far in advance must you request vacation compared to requesting remote work?",
+    "expected_answer": "Vacation requires at least 2 weeks advance notice, while remote work only requires 48 hours.",
+    "category": "multi_hop",
+    "source_documents": ["hr_policies.md"],
+    "notes": "Combines Vacation Policy and Remote Work Policy."
+  },
+  {
+    "id": "mh-14",
+    "question": "What steps happen from when a production incident is detected to when it's formally reviewed?",
+    "expected_answer": "The on-call engineer responds within 15 minutes, opens an incident channel, and notifies the engineering lead; a post-incident review then happens within 3 business days.",
+    "category": "multi_hop",
+    "source_documents": ["engineering_practices.md"],
+    "notes": "Combines On-Call Rotation and Incident Response."
+  },
+  {
+    "id": "mh-15",
+    "question": "Does the Starter tier's team size limit affect what data export options are available to it?",
+    "expected_answer": "No — data export in CSV or JSON format is available to customers on any tier, including Starter.",
+    "category": "multi_hop",
+    "source_documents": ["product_faq.md"],
+    "notes": "Combines Pricing Tiers (Starter limits) and Data Export (tier-independent)."
+  },
+  {
+    "id": "na-01",
+    "question": "What is the company's policy on employee referral bonuses?",
+    "expected_answer": "The documents do not contain any information about employee referral bonuses.",
+    "category": "no_answer",
+    "source_documents": [],
+    "notes": "Not covered anywhere in the corpus."
+  },
+  {
+    "id": "na-02",
+    "question": "Does the company provide company-issued laptops running Windows, macOS, or both?",
+    "expected_answer": "The documents mention company-issued laptops requiring full-disk encryption, but do not specify an operating system.",
+    "category": "no_answer",
+    "source_documents": [],
+    "notes": "Laptops are mentioned but OS is never specified."
+  },
+  {
+    "id": "na-03",
+    "question": "What programming languages does the engineering team primarily use?",
+    "expected_answer": "The documents do not specify what programming languages are used.",
+    "category": "no_answer",
+    "source_documents": [],
+    "notes": "Not covered anywhere in the corpus."
+  },
+  {
+    "id": "na-04",
+    "question": "Is there a 401(k) or retirement matching program?",
+    "expected_answer": "The documents do not contain any information about retirement benefits.",
+    "category": "no_answer",
+    "source_documents": [],
+    "notes": "Not covered anywhere in the corpus."
+  },
+  {
+    "id": "na-05",
+    "question": "What is the process for requesting a sign-on bonus?",
+    "expected_answer": "The documents do not contain any information about sign-on bonuses.",
+    "category": "no_answer",
+    "source_documents": [],
+    "notes": "Not covered anywhere in the corpus."
+  },
+  {
+    "id": "na-06",
+    "question": "Does the product offer a mobile app?",
+    "expected_answer": "The documents do not mention a mobile app.",
+    "category": "no_answer",
+    "source_documents": [],
+    "notes": "Not covered anywhere in the corpus."
+  },
+  {
+    "id": "na-07",
+    "question": "What is the company's policy on pet-friendly offices?",
+    "expected_answer": "The documents do not contain any information about office pet policies.",
+    "category": "no_answer",
+    "source_documents": [],
+    "notes": "Not covered anywhere in the corpus."
+  },
+  {
+    "id": "na-08",
+    "question": "How many sick days do employees receive per year?",
+    "expected_answer": "The documents describe vacation days (15 per year) but do not mention sick days separately.",
+    "category": "no_answer",
+    "source_documents": [],
+    "notes": "Vacation is covered; sick leave specifically is not."
+  },
+  {
+    "id": "amb-01",
+    "question": "How long does approval take?",
+    "expected_answer": "Ambiguous — could refer to remote work requests (48 hours advance notice), expense reimbursement (processed within 10 business days), or another approval process; the question does not specify which.",
+    "category": "ambiguous",
+    "source_documents": [],
+    "notes": "Multiple 'approval'-like timelines exist across the corpus; no single correct target section."
+  },
+  {
+    "id": "amb-02",
+    "question": "What's required before something can go live?",
+    "expected_answer": "Ambiguous — could refer to code review approval, the 80% test coverage requirement, or passing the automated test suite before deployment; the question does not specify which.",
+    "category": "ambiguous",
+    "source_documents": [],
+    "notes": "Multiple engineering-process sections could plausibly answer this."
+  },
+  {
+    "id": "amb-03",
+    "question": "How much does it cost?",
+    "expected_answer": "Ambiguous — pricing depends on tier: Starter is $9/month, Professional is $29/month, and Enterprise is custom; the question does not specify which tier.",
+    "category": "ambiguous",
+    "source_documents": [],
+    "notes": "Underspecified — three different valid numeric answers exist."
+  },
+  {
+    "id": "amb-04",
+    "question": "What's the review process?",
+    "expected_answer": "Ambiguous — could refer to code review (one engineer's approval), performance reviews (twice yearly), or post-incident review (within 3 business days); the question does not specify which.",
+    "category": "ambiguous",
+    "source_documents": [],
+    "notes": "Three unrelated 'review' processes exist across two documents."
+  },
+  {
+    "id": "amb-05",
+    "question": "How many days in advance do I need to give notice?",
+    "expected_answer": "Ambiguous — remote work requires 48 hours, vacation requires 2 weeks, and parental leave requires 30 days; the question does not specify which type of request.",
+    "category": "ambiguous",
+    "source_documents": [],
+    "notes": "Three different advance-notice requirements exist in hr_policies.md alone."
+  },
+  {
+    "id": "amb-06",
+    "question": "What security requirements apply?",
+    "expected_answer": "Ambiguous — password requirements, VPN/remote access rules, device encryption, two-factor authentication, and data classification could all apply depending on context; the question does not specify which.",
+    "category": "ambiguous",
+    "source_documents": [],
+    "notes": "The entire IT Security Policy document has five distinct sections that could each be 'the' answer."
+  },
+  {
+    "id": "amb-07",
+    "question": "What happens if I cancel?",
+    "expected_answer": "Ambiguous — this likely refers to canceling a product account (no refund for the current billing period, access continues until period end), but the question doesn't specify what is being canceled, and no employee-side cancellation policy exists in the corpus.",
+    "category": "ambiguous",
+    "source_documents": [],
+    "notes": "Underspecified subject; only one plausible match exists but the question itself doesn't establish context."
+  },
+  {
+    "id": "amb-08",
+    "question": "How is data protected?",
+    "expected_answer": "Ambiguous — could refer to device encryption, data classification rules for confidential data, or two-factor authentication on accounts with access to customer data; the question does not specify which aspect of data protection.",
+    "category": "ambiguous",
+    "source_documents": [],
+    "notes": "Multiple IT Security Policy sections are each partially relevant."
+  }
+]
